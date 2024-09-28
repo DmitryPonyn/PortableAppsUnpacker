@@ -422,7 +422,7 @@ namespace PortableAppsUnpacker
             if (Stable_diffusion.Checked)
             {
                 AlreadyUnpacking.Text = Languages.Lang("AlreadyUnpacking") + Stable_diffusion.Text;
-                await Task.Run(() => Tsk("Programs\\stable_diffusion.7z"));
+                await Task.Run(() => Tsk("Programs\\stable_diffusion.7z.001"));
                 TotalProgress_Pb.Value++;
                 TotalProgress_Lb.Text = Languages.Lang("AllProgress") + Convert.ToString(TotalProgress_Pb.Value * 100 / TotalProgress_Pb.Maximum) + "%";
                 Stable_diffusion.Checked = false;
